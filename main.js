@@ -13,7 +13,7 @@ args.forEach(function(numAsString){
     numAsString.split('').forEach(function(singleNum){
         var numAsWord = numToString(parseInt(singleNum));
         
-        // error handling, terminate program if uneccessary characters are called
+        // error handling, terminate program if uneccessary characters are passed
         if(!numAsWord){
             console.log("Invalid arguments passed");
             process.exit();
